@@ -4,6 +4,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Courses from "./components/Courses";
 import LoadingPage from "./loading";
+import CourseSearch from "./components/CourseSearch";
 
 const HomePage = () => {
   const [courses, setCourses] = useState([]);
@@ -24,6 +25,7 @@ const HomePage = () => {
   return (
     <div>
       <h1>Welcome to Next JS</h1>
+      <CourseSearch getSearchResults={(results) => setCourses(results)} />
       <Courses courses={courses} />
     </div>
   );

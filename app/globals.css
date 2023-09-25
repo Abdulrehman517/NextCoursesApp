@@ -236,3 +236,52 @@ body {
     transform: rotate(360deg);
   }
 }
+
+
+/* styles/About.module.css */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.profileImage {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.content {
+  flex: 2;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.skillsList {
+  list-style-type: square;
+  margin-left: 2rem;
+}
+
+a {
+  color: #0070f3;
+}

@@ -13,7 +13,9 @@ async function fetchRepoContent(name){
 
 const RepoDirs = async ({name}) => {
     const content = await fetchRepoContent(name)
-    const dirs = content.filter(content => content.type === 'dir');
+    const isArray = Array.isArray(content);
+    console.log('isArray', isArray);
+    const dirs = isArray && content.filter(content => content.type === 'dir') || [];
 
     return (
     <>
